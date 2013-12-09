@@ -11,16 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131209161118) do
+ActiveRecord::Schema.define(:version => 20131209174345) do
 
   create_table "addresses", :force => true do |t|
     t.string   "country"
     t.string   "state"
     t.string   "city"
     t.string   "street"
+    t.integer  "hotel_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  add_index "addresses", ["hotel_id"], :name => "index_addresses_on_hotel_id"
+
+  create_table "comments", :force => true do |t|
+    t.text     "text"
+    t.integer  "user_id"
+    t.integer  "hotel_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "comments", ["hotel_id"], :name => "index_comments_on_hotel_id"
+  add_index "comments", ["user_id"], :name => "index_comments_on_user_id"
 
   create_table "hotels", :force => true do |t|
     t.string   "title"
@@ -31,6 +45,15 @@ ActiveRecord::Schema.define(:version => 20131209161118) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  create_table "ratings", :force => true do |t|
+    t.float    "star"
+    t.integer  "hotel_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "ratings", ["hotel_id"], :name => "index_ratings_on_hotel_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

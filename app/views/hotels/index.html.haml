@@ -1,2 +1,16 @@
-%h1 Hotels#index
-%p Find me in app/views/hotels/index.html.haml
+%h1 Hotel
+
+%table
+  %tr
+    %td
+      %strong
+        Title
+    %td
+  -for i in @hotels do
+    %tr
+      %td
+        =i.title
+      %td
+        =link_to 'show', hotel_path(i)
+%br
+=link_to 'Add hotel', new_hotel_path(), class: 'btn btn-success'

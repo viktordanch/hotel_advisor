@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+puts "-------------------------------create hotels --------------------------------"
+9.times do |i|
+  hotel = Hotel.new(title: "Hotel#{i}")
+  hotel.save
+
+end

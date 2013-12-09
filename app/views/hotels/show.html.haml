@@ -1,2 +1,38 @@
+%br
+%br
+%br
+%br
+%br
+%br
+%br
 %h1 Hotels#show
-%p Find me in app/views/hotels/show.html.haml
+
+.row-fluid
+  .span2
+    %strong
+      Title
+  .span10
+    = @hotel.title
+
+.row-fluid
+  .span2
+    %strong
+      Country
+  .span10
+    = @hotel.address.country    if @hotel.address
+.row-fluid
+  .span2
+    %strong
+      State
+  .span10
+    = @hotel.address.state     if @hotel.address
+.row-fluid
+  .span2
+    %strong
+      Rating
+  .span10
+    = @hotel.ratings.first.star    if @hotel.ratings.first
+
+%br
+
+=link_to 'Back to list', hotels_path()

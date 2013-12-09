@@ -1,2 +1,22 @@
 %h1 Hotels#new
-%p Find me in app/views/hotels/new.html.haml
+%br
+%br
+%br
+%br
+=simple_form_for @hotel do |hotel|
+  .form-input
+    =hotel.input :title
+    = simple_fields_for :rating do |rating|
+      =rating.input :star
+    = simple_fields_for :address do |address|
+
+      = address.input :country
+      = address.input :state
+      = address.input :city
+      = address.input :street
+  .form-action
+    = hotel.button :submit, 'Add'
+
+%br
+
+=link_to 'Back to list', hotels_path()

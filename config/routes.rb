@@ -1,11 +1,7 @@
 HotelAdvisor::Application.routes.draw do
-  get "hotels/index"
+  root :to => 'hotels#index'
 
-  get "hotels/show"
-
-  get "hotels/new"
-
-  get "hotels/create"
+  resources :hotels, only: [:index, :show, :create, :new]
 
   devise_for :users
 
