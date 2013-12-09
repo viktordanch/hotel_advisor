@@ -1,4 +1,12 @@
 HotelAdvisor::Application.routes.draw do
+  get "hotels/index"
+
+  get "hotels/show"
+
+  get "hotels/new"
+
+  get "hotels/create"
+
   devise_for :users
 
   # The priority is based upon order of creation:
