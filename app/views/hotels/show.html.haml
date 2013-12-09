@@ -34,5 +34,24 @@
     = @hotel.ratings.first.star    if @hotel.ratings.first
 
 %br
+%br
+%h4
+  Leave a comment
+= form_tag(controller: 'comments', action: 'create', id: @hotel.id ) do
+  .form-input
+    =text_field_tag(:text)
+  .form-action
+    = submit_tag('Add')
+
+%br
+%h4
+  Leave your rating
+= simple_form_for :rating do |rating|
+  .form-input
+    =rating.input :star
+  .form-action
+    = rating.button :submit, 'Add'
+
+%br
 
 =link_to 'Back to list', hotels_path()

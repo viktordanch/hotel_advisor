@@ -1,7 +1,12 @@
 HotelAdvisor::Application.routes.draw do
+
+
   root :to => 'hotels#index'
 
-  resources :hotels, only: [:index, :show, :create, :new]
+  resources :hotels, only: [:index, :show, :create, :new] do
+    resources :comments, only: [:create]
+    resources :ratings, only: [:create]
+  end
 
   devise_for :users
 
