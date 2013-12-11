@@ -1,0 +1,8 @@
+%h4
+  =Rating.all.count
+  Leave your rating
+=simple_form_for([@hotel, @hotel.ratings.build]) do |rating|
+  .form-input
+    =rating.input :star
+  .form-action
+    = rating.button :submit, 'Add', id: @hotel.id , class: 'rating_set'

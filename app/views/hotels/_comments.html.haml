@@ -1,0 +1,9 @@
+%h4
+  = Comment.all.count;
+  Leave a comment
+
+=simple_form_for([@hotel, @hotel.comments.build],remote: true) do |hotel|
+  .form-input
+    =hotel.input :text
+  .form-action
+    = hotel.button :submit, 'Add', id: @hotel.id, class: 'comment_set'
