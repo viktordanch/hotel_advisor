@@ -1,9 +1,20 @@
-%h4
-  = Comment.all.count;
-  Leave a comment
+.row-fluid
+  .span12
+    %h4
+      Comments
+    -@hotel.comments.each do |i|
+      .row-fluid
+        .span3
+          =i.user.email
+        .span9
+          =i.text
 
-=simple_form_for([@hotel, @hotel.comments.build],remote: true) do |hotel|
-  .form-input
-    =hotel.input :text
-  .form-action
-    = hotel.button :submit, 'Add', id: @hotel.id, class: 'comment_set'
+    %h4
+
+    Leave a comment
+
+    =simple_form_for([@hotel, @hotel.comments.build],remote: true) do |hotel|
+      .form-input
+        =hotel.input :text ,  :input_html => { :cols => 50, :rows => 3 }
+      .form-action
+        = hotel.button :submit, 'Add', id: @hotel.id, class: 'comment_set'

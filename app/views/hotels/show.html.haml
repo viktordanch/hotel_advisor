@@ -26,19 +26,20 @@
 .row-fluid
   .span2
     %strong
-      Rating
+      Avatar
   .span10
-    = @hotel.ratings.first.star    if @hotel.ratings.first
+    = image_tag @hotel.image_url.to_s
 
 %br
 %br
-#comment_container
-  =render partial: 'comments'
+.row-fluid
+  .span6
+    #comment_container
+      =render partial: 'comments'
 
-
-%br
-#rating_container
-  =render partial: 'ratings'
+  .span6
+    #rating_container
+      =render partial: 'ratings'
 
 %br
 

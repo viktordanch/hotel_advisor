@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131209174345) do
+ActiveRecord::Schema.define(:version => 20131212054845) do
 
   create_table "addresses", :force => true do |t|
     t.string   "country"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(:version => 20131209174345) do
     t.string   "room_price"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "image"
   end
 
   create_table "ratings", :force => true do |t|

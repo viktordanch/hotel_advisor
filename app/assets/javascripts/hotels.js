@@ -24,7 +24,7 @@ function live_rating(hotel_id){
 
     $.ajax({
         url:'/hotels/'+hotel_id+'/ratings',
-        data: {},
+        data: {star: $('#rating_container form #rating_star').val()},
         type: 'POST',
         error: function(err){
             alert("error");
@@ -38,7 +38,7 @@ function live_comment(hotel_id){
 
     $.ajax({
         url:'/hotels/'+hotel_id+'/comments',
-        data: {},
+        data: {text: $('#comment_container form #comment_text').val()},
         type: 'POST',
         error: function(err){
             alert("error");

@@ -29,7 +29,7 @@
           %a.brand(href="#") HotelAdvisor
           .container.nav-collapse
             %ul.nav
-              %li= link_to "Link 1", "/path1"
+              %li= link_to "log out", destroy_user_session_path, method: 'delete'
               %li= link_to "Link 2", "/path2"
               %li= link_to "Link 3", "/path3"
 

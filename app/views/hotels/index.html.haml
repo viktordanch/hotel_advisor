@@ -1,16 +1,53 @@
 %h1 Hotel
+.row-fluid
+  .span12.hotels-table{style: "max-height:400px; overflow: auto;"}
+    .row-fluid
+      .span2
+        %strong
+          Title
+      .span2
+        %strong
+          Rating
+      .span2
+        %strong
+          Image
+      .span2
+    -for i in @hotels do
+      .row-fluid
+        .span2
+          =i.title
+        .span2
+          =i.rating
+        .span2
+          = image_tag i.image_url(:thumb).to_s
+        .span2
+          =link_to 'show', hotel_path(i)
 
-%table
-  %tr
-    %td
-      %strong
-        Title
-    %td
-  -for i in @hotels do
-    %tr
-      %td
-        =i.title
-      %td
-        =link_to 'show', hotel_path(i)
+.row-fluid
+  .span12.hotels-table{style: "max-height:400px; overflow: auto;"}
+    .row-fluid
+      .span2
+        %strong
+          Title
+      .span2
+        %strong
+          Rating
+      .span2
+        %strong
+          image
+      .span2
+    -for i in @best_hotels do
+      .row-fluid
+        .span2
+          =i.title
+        .span2
+          =i.rating
+        .span2
+          = image_tag i.image_url(:thumb).to_s
+        .span2
+          =link_to 'show', hotel_path(i)
+
+
+
 %br
 =link_to 'Add hotel', new_hotel_path(), class: 'btn btn-success'

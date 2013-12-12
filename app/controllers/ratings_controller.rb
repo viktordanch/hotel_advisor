@@ -1,9 +1,9 @@
 class RatingsController < ApplicationController
   def create
+    puts "-------------ratind-controller---------------------------"
+    puts "-------------#{params}---------------------------"
     @hotel = Hotel.find_by_id(params[:hotel_id])
-    @rating = @hotel.ratings.new(params[:rating])
-    @rating.user = current_user
-    @rating.save
+    Rating.set_rating(@hotel,params[:star], current_user)
     render partial: 'hotels/ratings';
 
   end

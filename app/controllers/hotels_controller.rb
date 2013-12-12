@@ -1,6 +1,7 @@
 class HotelsController < ApplicationController
   def index
-    @hotels = Hotel.all
+    @hotels = Hotel.order('id DESC').all
+    @best_hotels = Hotel.order('rating DESC').limit(5)
   end
 
   def show
@@ -17,27 +18,26 @@ class HotelsController < ApplicationController
 
 
     @hotel = Hotel.new(params[:hotel])
-    @rating = Rating.new(params[:rating])
+
     @address = Address.new(params[:address])
 
     Hotel.transaction do
-      @hotel.ratings << @rating
+
       @hotel.address = @address
       @hotel.save!
       @address.save!
-      @rating.save!
+      @rating = Rating.set_rating(@hotel,params[:hotel][:rating], current_user)
+
 
       redirect_to hotel_path(@hotel), notice: 'Hotel have created'
     end
 
-  rescue Exception =>e
-    @rating.valid?
+  rescue ActiveRecord::RecordInvalid =>e
+
     @address.valid?
-    puts "------------error---------------------"
-    puts "------------error---------------------"
-    puts "------------error---------------------"
-    puts "------------#{@rating.errors.messages.inspect}--------------------"
-    puts "------------#{@rating.errors.messages.inspect}--------------------"
+
+    #puts "------------#{@rating.errors.messages.inspect}--------------------"
+    #puts "------------#{@rating.errors.messages.inspect}--------------------"
     puts "------------#{@address.errors.messages.inspect}--------------------"
     render :new
 

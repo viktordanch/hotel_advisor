@@ -15,6 +15,8 @@ gem 'haml-rails'
 gem 'factory_girl_rails'
 gem 'devise'
 gem 'country_select'
+gem "rmagick"
+gem "carrierwave"
 
 
 # Gems used only for assets and not required

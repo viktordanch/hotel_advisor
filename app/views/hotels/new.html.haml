@@ -3,13 +3,13 @@
 %br
 %br
 %br
-=simple_form_for @hotel do |hotel|
+=simple_form_for @hotel, html: {multipart: true} do |hotel|
   .form-input
     =hotel.input :title
-    = simple_fields_for :rating do |rating|
-      =rating.input :star
+    =hotel.input :rating
+    =hotel.input :image, as: :file
+    =hotel.input :remote_image_url
     = simple_fields_for :address do |address|
-
       = address.input :country
       = address.input :state
       = address.input :city
