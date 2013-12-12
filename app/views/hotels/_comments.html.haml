@@ -1,20 +1,24 @@
 .row-fluid
   .span12
+
     %h4
+
       Comments
     -@hotel.comments.each do |i|
-      .row-fluid
-        .span3
-          =i.user.email
-        .span9
-          =i.text
+      -unless i.id.nil?
+        .row-fluid
+          .span3
+            =i.user.email
+          .span9
+            =i.text
 
     %h4
 
     Leave a comment
 
-    =simple_form_for([@hotel, @hotel.comments.build],remote: true) do |hotel|
+    =simple_form_for(@comment, url: hotel_comments_path({hotel_id: @hotel}), html: {novalidate: false}) do |comment|
+
       .form-input
-        =hotel.input :text ,  :input_html => { :cols => 50, :rows => 3 }
+        =comment.input :text , required: :true, :input_html => { :cols => 50, :rows => 3 }
       .form-action
-        = hotel.button :submit, 'Add', id: @hotel.id, class: 'comment_set'
+        =comment.button :submit, 'Add', id: @hotel.id, class: 'comment_set'

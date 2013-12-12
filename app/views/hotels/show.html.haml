@@ -3,6 +3,7 @@
 %br
 %br
 %h1 Hotels#show
+-#:breakfast, :description, :rating, :room_price, :title, :image,  :remote_image_url
 
 .row-fluid
   .span2
@@ -10,6 +11,25 @@
       Title
   .span10
     = @hotel.title
+
+.row-fluid
+  .span2
+    %strong
+      Breacfast
+  .span10
+    = @hotel.breakfast
+.row-fluid
+  .span2
+    %strong
+      Description
+  .span10
+    = @hotel.description
+.row-fluid
+  .span2
+    %strong
+      Price for room
+  .span10
+    = @hotel.room_price
 
 .row-fluid
   .span2

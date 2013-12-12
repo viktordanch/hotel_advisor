@@ -5,7 +5,7 @@ class CreateHotels < ActiveRecord::Migration
       t.float :rating
       t.boolean :breakfast
       t.text :description
-      t.string :room_price
+      t.float :room_price
 
       t.timestamps
     end

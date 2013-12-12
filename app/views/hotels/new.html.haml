@@ -5,8 +5,12 @@
 %br
 =simple_form_for @hotel, html: {multipart: true} do |hotel|
   .form-input
-    =hotel.input :title
-    =hotel.input :rating
+    =hotel.input :title, required: :true
+    =hotel.input :rating, :input_html => { 'required'=>'required' }
+    =hotel.input :description, :input_html => { :cols => 50, :rows => 3 }
+    =hotel.input :room_price
+    =hotel.input :breakfast
+
     =hotel.input :image, as: :file
     =hotel.input :remote_image_url
     = simple_fields_for :address do |address|

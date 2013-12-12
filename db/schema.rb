@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(:version => 20131212054845) do
     t.float    "rating"
     t.boolean  "breakfast"
     t.text     "description"
-    t.string   "room_price"
+    t.float    "room_price"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.string   "image"

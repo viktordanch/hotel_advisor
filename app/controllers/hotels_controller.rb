@@ -6,8 +6,8 @@ class HotelsController < ApplicationController
 
   def show
     @hotel = Hotel.find_by_id(params[:id])
-    @address = @hotel.address
-    @rating = @hotel.rating
+    @rating = Rating.new()
+    @comment = Comment.new()
   end
 
   def new
