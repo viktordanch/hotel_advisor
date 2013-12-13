@@ -3,7 +3,7 @@ class Rating < ActiveRecord::Base
   belongs_to :user
   attr_accessible :star
   validates_presence_of :star
-  validates :star,  numericality: { only_integer: true , less_than: 5, greater_than: 1}
+  validates :star,  numericality: { only_integer: true , less_than: 6, greater_than: 0}
 
 
 

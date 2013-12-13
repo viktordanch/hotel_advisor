@@ -8,7 +8,7 @@
     =hotel.input :title, required: :true
     =hotel.input :rating, :input_html => { 'required'=>'required' }
     =hotel.input :description, :input_html => { :cols => 50, :rows => 3 }
-    =hotel.input :room_price
+    =hotel.input :room_price, as: :string
     =hotel.input :breakfast
 
     =hotel.input :image, as: :file

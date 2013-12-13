@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :rating do
-    star 1.5
+    star 1
     hotel nil
   end
 end

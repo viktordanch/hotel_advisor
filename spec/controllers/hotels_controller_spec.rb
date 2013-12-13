@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe HotelsController do
+  include Devise::TestHelpers
 
   describe "GET 'index'" do
     it "returns http success" do
