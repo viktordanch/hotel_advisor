@@ -1,26 +1,26 @@
-%h1 New hotel
-%br
-%br
-%br
-%br
-=simple_form_for @hotel, html: {multipart: true} do |hotel|
-  .form-input
-    =hotel.input :title, required: :true
-    =hotel.input :rating, :input_html => { 'required'=>'required' }, label: 'Start rating'
-    =hotel.input :description, label: 'Room description', :input_html => { :cols => 50, :rows => 3 }
-    =hotel.input :room_price, as: :string, label: 'Price for room'
-    =hotel.input :breakfast, label: 'Include breakfast'
+#new
+  %h2.text-shadow.text-center
+    New hotel
 
-    =hotel.input :image, as: :file, label: 'Photo'
-    =hotel.input :remote_image_url, label: 'Link on photo'
-    = simple_fields_for :address do |address|
-      = address.input :country
-      = address.input :state
-      = address.input :city
-      = address.input :street
-  .form-action
-    = hotel.button :submit, 'Create'
+  =simple_form_for @hotel, html: {multipart: true} do |hotel|
+    .form-input
+      .span6
+        =hotel.input :title, required: :true
+        =hotel.input :rating, :input_html => { 'required'=>'required' }, label: 'Start rating'
+        =hotel.input :description, label: 'Room description', :input_html => { :cols => 50, :rows => 3 }
+        =hotel.input :room_price, as: :string, label: 'Price for room'
+        =hotel.input :breakfast, label: 'Include breakfast'
+      .span6
+        =hotel.input :image, as: :file, label: 'Photo'
+        =hotel.input :remote_image_url, label: 'Link on photo'
+        = simple_fields_for :address do |address|
+          = address.input :country
+          = address.input :state
+          = address.input :city
+          = address.input :street
+    .form-action
+      = hotel.button :submit, 'Create',class: 'btn app-button'
 
-%br
+  %br
 
-=link_to 'Back to list', hotels_path()
+  =link_to 'Back to list', hotels_path(),class: 'btn app-button'

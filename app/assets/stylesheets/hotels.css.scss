@@ -1,3 +1,54 @@
 // Place all the styles related to the Hotels controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#index-page, #new{
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #77B755;
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 22px 7px #2B5017, inset 0px 5px 22px 7px #2B5017;
+  box-shadow: 0px 5px 22px 7px #2B5017, inset 0px 5px 22px 7px #2B5017;
+  .row-list{
+    padding: 10px 0;
+
+  }
+  .hotels-container{
+    padding: 20px;
+    margin: -20px;
+  }
+  .hotels-list{
+    border-radius: 5px;
+    border: 1px solid green;
+    max-height:400px;
+    overflow: auto;
+    padding: 10px 0;
+  }
+  .row-fluid.head{
+    border-bottom: 1px solid green;
+  }
+
+}
+#new{
+  form{
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+   input, textarea, select{
+     -webkit-box-shadow:  0px 5px 22px 0px #2B5017;
+     box-shadow:  0px 5px 22px 0px #2B5017;
+   }
+    input[type="file"]{
+      -webkit-box-shadow:  0px 0px 0px 0px #2B5017;
+      box-shadow:  0px 0px 0px 0px #2B5017;
+    }
+    label{
+      color: #D7D3D3;
+      text-shadow: 1px 1px 2px black, 0 0 1em #398313;
+    }
+    .control-group.error.help-inline{
+      text-shadow: 1px 1px 12px red, 0 0 1em #398313;
+    }
+}
+}

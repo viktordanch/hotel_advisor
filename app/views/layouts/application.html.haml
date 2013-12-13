@@ -20,7 +20,7 @@
 
   %body
     .navbar.navbar-fixed-top
-      .navbar-inner
+      .navbar-inner#header
         .container
           %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
             %span.icon-bar
@@ -28,17 +28,20 @@
             %span.icon-bar
           %a.brand(href="#") HotelAdvisor
           .container.nav-collapse
-            %ul.nav
-              %li= link_to "Log out", destroy_user_session_path, method: 'delete'
-              %li= link_to "Link 2", "/path2"
-              %li= link_to "Link 3", "/path3"
+            %ul.nav#top-links
+              - if current_user
+                %li= link_to "Log out", destroy_user_session_path, method: 'delete'
+              -else
+
+                %li= link_to "Sing in",  new_user_session_path
+                %li= link_to "Sing up",  new_user_registration_path
 
     .container
 
-      .row-fluid{style: 'margin-top: 40px;'}
+      .row-fluid.page-container
         .span12
-          = bootstrap_flash
+
           = yield
 
       %footer
-        %p &copy; Company 2013
+

@@ -1,54 +1,54 @@
-%h1 Hotels
-.row-fluid
-  .span12.hotels-table{style: "max-height:400px; overflow: auto;"}
-    .row-fluid
-      .span2
-        %strong
-          Title
-      .span2
-        %strong
-          Rating
-      .span2
-        %strong
-          Image
-      .span2
-    -for i in @hotels do
-      .row-fluid
-        .span2
-          =i.title
-        .span2
-          =i.rating
-        .span2
-          = image_tag i.image_url(:thumb).to_s
-        .span2
-          =link_to 'show', hotel_path(i)
+#index-page
+  %h2.text-shadow.text-center
+    All hotels
+  .row-fluid.hotels-container
+    .span12.hotels-table.hotels-list
+      .row-fluid.head
+        .span3
+        .span3
+          %strong.text-shadow
+            Title
+        .span3
+          %strong.text-shadow
+            Rating
+        .span3
+      -for i in @hotels do
+        .row-fluid.row-list
+          .span3.text-center
+            = image_tag i.image_url(:thumb).to_s, class: 'out-shadow'
+          .span3.text-shadow
+            =i.title
+          .span3.text-shadow
+            =i.rating
 
-.row-fluid
-  %h1 Best hotels
-  .span12.best-hotels-table{style: "max-height:400px; overflow: auto;"}
-    .row-fluid
-      .span2
-        %strong
-          Title
-      .span2
-        %strong
-          Rating
-      .span2
-        %strong
-          image
-      .span2
-    -for i in @best_hotels do
-      .row-fluid
+          .span3
+            =link_to 'show', hotel_path(i), class: 'btn app-button'
+  %h2.text-shadow.text-center
+    Best hotels
+  .row-fluid.hotels-container
+    .span12.best-hotels-table.hotels-list
+      .row-fluid.head
+        .span3
+        .span3
+          %strong.text-shadow
+            Title
+        .span3
+          %strong.text-shadow
+            Rating
+
         .span2
-          =i.title
-        .span2
-          =i.rating
-        .span2
-          = image_tag i.image_url(:thumb).to_s
-        .span2
-          =link_to 'show', hotel_path(i)
+      -for i in @best_hotels do
+        .row-fluid.row-list
+          .span3.text-center
+            = image_tag i.image_url(:thumb).to_s, class: 'out-shadow'
+          .span3.text-shadow
+            =i.title
+          .span3.text-shadow
+            =i.rating
+          .span3
+            =link_to 'show', hotel_path(i),class: 'btn app-button'
 
 
 
-%br
-=link_to 'Add hotel', new_hotel_path(), class: 'btn btn-success'
+  %br
+  =link_to 'Add hotel', new_hotel_path(), class: 'btn app-button'
