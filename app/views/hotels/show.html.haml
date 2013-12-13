@@ -1,76 +1,78 @@
-%h1 Hotel
+#show
+  %h2.text-shadow.text-center
+    Hotel
 
 
-.row-fluid
-  .span6
-    .row-fluid
-      .span4.text-right
-        %strong
-          Title
-      .span8
-        = @hotel.title
+  .row-fluid.info-container
+    .span6
+      .row-fluid.text-shadow
+        .span4.text-right
+          %strong
+            Title:
+        .span8
+          = @hotel.title
 
-    .row-fluid
-      .span4.text-right
-        %strong
-          Include breakfast
-      .span8
-        = (@hotel.breakfast)? 'Yes': 'No'
-    .row-fluid
-      .span4.text-right
-        %strong
-          Room description
-      .span8
-        = @hotel.description
-    .row-fluid
-      .span4.text-right
-        %strong
-          Price for room
-      .span8
-        = @hotel.room_price
+      .row-fluid.text-shadow
+        .span4.text-right
+          %strong
+            Include breakfast:
+        .span8
+          = (@hotel.breakfast)? 'Yes': 'No'
+      .row-fluid.text-shadow
+        .span4.text-right
+          %strong
+            Room description:
+        .span8
+          = @hotel.description
+      .row-fluid.text-shadow
+        .span4.text-right
+          %strong
+            Price for room:
+        .span8
+          = @hotel.room_price
 
-    .row-fluid
-      .span4.text-right
-        %strong
-          Country
-      .span8
-        = @hotel.address.country    if @hotel.address
-    .row-fluid
-      .span4.text-right
-        %strong
-          State
-      .span8
-        = @hotel.address.state     if @hotel.address
-    .row-fluid
-      .span4.text-right
-        %strong
-          City
-      .span8
-        = @hotel.address.city     if @hotel.address
-    .row-fluid
-      .span4.text-right
-        %strong
-          Street
-      .span8
-        = @hotel.address.street     if @hotel.address
-  .span6
-    .span12
-      %strong.text-canter
-        Photo
-    .span12.text-center
-      = image_tag @hotel.image_url.to_s, style: 'max-width: 400px;'
+      .row-fluid.text-shadow
+        .span4.text-right
+          %strong
+            Country:
+        .span8
+          = @hotel.address.country    if @hotel.address
+      .row-fluid.text-shadow
+        .span4.text-right
+          %strong.text-shadow
+            State:
+        .span8
+          = @hotel.address.state     if @hotel.address
+      .row-fluid.text-shadow
+        .span4.text-right
+          %strong
+            City:
+        .span8
+          = @hotel.address.city     if @hotel.address
+      .row-fluid.text-shadow
+        .span4.text-right
+          %strong
+            Street
+        .span8
+          = @hotel.address.street     if @hotel.address
+    .span6.img-container
+      .row-fluid
+        .span12.text-shadow
+          %strong
+            Photo
+          = image_tag @hotel.image_url.to_s, class: 'out-shadow'
 
-%br
-%br
-.row-fluid
-  .span6
-    #comment_container
-      =render partial: 'comments'
+  %br
+  %br
+  .row-fluid
+    .span6
+      #comment_container
+        =render partial: 'comments'
 
-  .span6
-    #rating_container
-      =render partial: 'ratings'
+    .span6
+      #rating_container
+        =render partial: 'ratings'
 
-%br
+  %br
 
-=link_to 'Back to list', hotels_path()
+  =link_to 'Back to list', hotels_path(), class: 'btn app-button'

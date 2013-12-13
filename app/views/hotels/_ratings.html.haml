@@ -1,14 +1,13 @@
-.row-fluid
-  .span6
-    %h4
+.row-fluid.rating-container
+  .span4
+    %h4.text-shadow
       Hotel rating
-    .span
+    .span.text-shadow
       =@hotel.rating
-  .span6
-    %h4
+  .span8
+    %h4.text-shadow
       Leave your rating
     =simple_form_for(@rating, url: hotel_ratings_path({hotel_id: @hotel}), :html => { :class => 'form-horizontal' }) do |rating|
-      .form-input
+      .form-input.text-shadow
         =rating.input :star, input_html: {"required"=>"required"}
-      .form-action
-        = rating.button :submit, 'Rate', id: @hotel.id , class: 'rating_set'
+        = rating.button :submit, 'Rate', id: @hotel.id , class: 'rating_set app-button'

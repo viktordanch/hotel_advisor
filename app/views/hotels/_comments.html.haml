@@ -1,24 +1,23 @@
-.row-fluid
+.row-fluid.comments-container
   .span12
 
-    %h4
-
+    %h4.text-shadow
       Comments
     -@hotel.comments.each do |i|
       -unless i.id.nil?
-        .row-fluid
+        .row-fluid.text-shadow.comment-item
           .span3
             =i.user.email
           .span9
             =i.text
 
-    %h4
+    %h4.text-shadow
 
-    Leave a comment
+      Leave a comment
 
     =simple_form_for(@comment, url: hotel_comments_path({hotel_id: @hotel}), html: {novalidate: false}) do |comment|
 
-      .form-input
+      .form-input.text-shadow
         =comment.input :text , required: :true, :input_html => { :cols => 50, :rows => 3 }, label: 'comment text'
       .form-action
-        =comment.button :submit, 'Add comment', id: @hotel.id, class: 'comment_set'
+        =comment.button :submit, 'Add comment', id: @hotel.id, class: 'comment_set app-button'
