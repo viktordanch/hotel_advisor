@@ -68,6 +68,10 @@
   }
 
   #rating_container{
+    border: 1px solid green;
+    padding: 0 20px;
+
+    border-radius: 5px;
     .control-group.rating_star, label{
       width: 40px;
     }
@@ -80,9 +84,14 @@
 
     }
   }
+
   .row-fluid.comments-container, .rating-container{
+
+  }
+  #comment_container{
     border: 1px solid green;
-    padding: 5px;
+    padding: 0 20px;
+
     border-radius: 5px;
   }
   .comment-item{

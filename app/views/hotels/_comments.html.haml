@@ -6,9 +6,9 @@
     -hotel.comments.each do |i|
       -unless i.id.nil?
         .row-fluid.text-shadow.comment-item
-          .span3
+          .span12
             =i.user.email
-          .span9
+          .span10.offset2
             =i.text
 
     %h4.text-shadow

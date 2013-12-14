@@ -2,10 +2,13 @@
 
 
    $(document).ready(function(){
+       $('input[type=file]').bootstrapFileInput();
+       $('#new .file-input-wrapper').addClass('app-button');
        $(document).on('click', '#rating_container .rating_set' , function(){
 
            var id = $(this).attr('id');
            live_rating(id);
+
            return false;
        });
      $(document).on('click', '#comment_container .comment_set' , function(){
@@ -13,7 +16,7 @@
            var id = $(this).attr('id');
            live_comment(id);
 
-         $('#comment_container form #comment_text').val('');
+
 
            return false;
        });
@@ -33,8 +36,8 @@ function live_rating(hotel_id){
             alert("error");
         },
         success: function(data){
-            $('#rating_container form #rating_star').val('');
             $('#rating_container').html(data);
+            $('#rating_container form #rating_star').val('');
 
         }
     });
@@ -50,6 +53,7 @@ function live_comment(hotel_id){
         },
         success: function(data){
              $('#comment_container').html(data);
+            $('#comment_container form #comment_text').val('');
          }
     });
 }

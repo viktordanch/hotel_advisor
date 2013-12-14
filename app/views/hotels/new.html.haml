@@ -11,9 +11,9 @@
         =hotel.input :room_price, as: :string, label: 'Price for room'
         =hotel.input :breakfast, label: 'Include breakfast'
       .span6
-        =hotel.input :image, as: :file, label: 'Photo'
+        =hotel.input :image, as: :file, label: 'Photo', class: 'app-button'
         =hotel.input :remote_image_url, label: 'Link on photo'
-        = simple_fields_for :address do |address|
+        = simple_fields_for :address, :defaults => {:required => false} do |address|
           = address.input :country
           = address.input :state
           = address.input :city
