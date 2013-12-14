@@ -4,12 +4,12 @@
     <list default="true" id="2f91d7fd-651f-4832-ad78-c6d241a142af" name="Default" comment="" />
     <ignored path="hotel_advisor.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Gemfile" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386603965403" ignored="false" />
-    <file path="/routes.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386612090590" ignored="false" />
+    <file path="/Gemfile" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1387011018648" ignored="false" />
+    <file path="/routes.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1387003960160" ignored="false" />
     <file path="/hotel.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386917785306" ignored="false" />
     <file path="/seeds.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386606503908" ignored="false" />
     <file path="/index.html.haml" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386831848983" ignored="false" />
-    <file path="/hotels_controller.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386880753894" ignored="false" />
+    <file path="/hotels_controller.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1387008962659" ignored="false" />
     <file path="/new.html.haml" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386917478718" ignored="false" />
     <file path="/create.html.haml" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386607497651" ignored="false" />
     <file path="/show.html.haml" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386874196595" ignored="false" />
@@ -32,10 +32,13 @@
     <file path="/users.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386913813571" ignored="false" />
     <file path="$PROJECT_DIR$/../bdd_apps/hotel_advisor/spec/factories/hotels.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386913968270" ignored="false" />
     <file path="/hotels.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386918536598" ignored="false" />
-    <file path="/hotel_spec.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386918795852" ignored="false" />
+    <file path="/hotel_spec.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1387010922750" ignored="false" />
     <file path="/address_spec.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386919041543" ignored="false" />
     <file path="/comment_spec.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386919322467" ignored="false" />
     <file path="/rating_spec.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1386920715505" ignored="false" />
+    <file path="/comments_controller_spec.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1387005362243" ignored="false" />
+    <file path="/ratings_controller_spec.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1387005817405" ignored="false" />
+    <file path="/hotels_controller_spec.rb" changelist="2f91d7fd-651f-4832-ad78-c6d241a142af" time="1387009885352" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,73 +58,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hotel_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/hotel_spec.rb">
+      <file leaf-file-name="hotel_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/integrations/hotel_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="-1.5254238">
+            <state line="5" column="31" selection-start="81" selection-end="81" vertical-scroll-proportion="0.12254902">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/comment_spec.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="38" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+            <state line="19" column="4" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rating.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/rating.rb">
+      <file leaf-file-name="comments_helper_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/helpers/comments_helper_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="86" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="21" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rating_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/rating_spec.rb">
+      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="40" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/factories/comments.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hotel.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/hotel.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="57" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.haml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/hotels/new.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="41" selection-start="329" selection-end="329" vertical-scroll-proportion="0.26642984">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hotels.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/factories/hotels.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+            <state line="40" column="30" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,22 +104,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/hotels/_comments.html.haml" />
-        <option value="$PROJECT_DIR$/spec/controllers/comments_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/hotels_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/ratings_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/factories/users.rb" />
-        <option value="$PROJECT_DIR$/app/views/hotels/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/hotel.rb" />
-        <option value="$PROJECT_DIR$/spec/factories/hotels.rb" />
-        <option value="$PROJECT_DIR$/spec/models/address_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories/ratings.rb" />
         <option value="$PROJECT_DIR$/spec/models/comment_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/rating.rb" />
         <option value="$PROJECT_DIR$/spec/models/rating_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/hotel_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/comments_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/ratings_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/factories/addresses.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/hotels_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/hotels_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/spec/integrations/hotel_spec.rb" />
       </list>
     </option>
   </component>
@@ -235,7 +202,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="integrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,7 +220,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="factories" />
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,25 +234,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel_advisor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel_advisor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,6 +324,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_advisor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_advisor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -409,7 +376,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bdd_apps/hotel_advisor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bdd_apps/hotel_advisor/spec/integrations/hotel_spec.rb" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -671,7 +638,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27309236" sideWeight="0.68333334" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27791163" sideWeight="0.68333334" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -745,115 +712,119 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/hotels/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="68" selection-start="1521" selection-end="1521" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="47" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/rails.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/hotels_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="81" selection-end="81" vertical-scroll-proportion="0.073529415">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/hotel.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="57" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/hotels.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/comments.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/ratings.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="123" selection-end="123" vertical-scroll-proportion="0.10221465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/address_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="103" selection-end="103" vertical-scroll-proportion="0.10221465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/addresses.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/hotel_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="-1.5254238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/rating_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="40" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
+        <state line="10" column="41" selection-start="329" selection-end="329" vertical-scroll-proportion="0.25510204">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/rating.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="86" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+        <state line="5" column="86" selection-start="213" selection-end="213" vertical-scroll-proportion="0.09313726">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/comment_spec.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+        <state line="6" column="39" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/hotels/new.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="329" selection-end="329" vertical-scroll-proportion="0.26642984">
+        <state line="7" column="36" selection-start="240" selection-end="255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ratings_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/comments_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="192" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/ratings_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/addresses.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/hotels_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bdd_apps/hotel_advisor/spec/integrations/hotel_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="23" selection-end="864" vertical-scroll-proportion="0.04901961">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/hotels_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="57" selection-start="3540" selection-end="3540" vertical-scroll-proportion="0.5833333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/helpers/comments_helper_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="21" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="4" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integrations/hotel_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="31" selection-start="81" selection-end="81" vertical-scroll-proportion="0.12254902">
           <folding />
         </state>
       </provider>

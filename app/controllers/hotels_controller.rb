@@ -16,7 +16,6 @@ class HotelsController < ApplicationController
 
   def create
 
-
     @hotel = Hotel.new(params[:hotel])
 
     @address = Address.new(params[:address])
@@ -35,10 +34,6 @@ class HotelsController < ApplicationController
   rescue ActiveRecord::RecordInvalid =>e
 
     @address.valid?
-
-    #puts "------------#{@rating.errors.messages.inspect}--------------------"
-    #puts "------------#{@rating.errors.messages.inspect}--------------------"
-    puts "------------#{@address.errors.messages.inspect}--------------------"
     render :new
 
 

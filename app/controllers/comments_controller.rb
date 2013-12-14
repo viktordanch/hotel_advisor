@@ -6,7 +6,6 @@ class CommentsController < ApplicationController
     @comment.user = current_user
     @comment.save
     render partial: 'hotels/comments'
-    puts "-----------------comment--------------------------"
-    puts "------------#{@comment.errors.messages.inspect}-------------------------"
+
   end
 end

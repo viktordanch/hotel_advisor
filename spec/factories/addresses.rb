@@ -6,6 +6,6 @@ FactoryGirl.define do
     state "MyString"
     city "MyString"
     street "MyString"
-    hotel nil
+
   end
 end

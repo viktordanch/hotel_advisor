@@ -17,6 +17,7 @@ gem 'devise'
 gem 'country_select'
 gem "rmagick"
 gem "carrierwave"
+gem 'selenium-webdriver'
 
 
 # Gems used only for assets and not required
