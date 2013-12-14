@@ -8,6 +8,7 @@ class Rating < ActiveRecord::Base
 
 
   def self.set_rating(hotel, rating, user)
+
     users_rating = hotel.ratings.where(user_id: user.id)
       if  users_rating.blank?
 
@@ -18,8 +19,10 @@ class Rating < ActiveRecord::Base
 
         @rating = users_rating.first
       end
-    hotel.update_attributes(rating: Rating.where(hotel_id: hotel.id).average(:star))
 
+    hotel.update_attributes(rating: Rating.where(hotel_id: hotel.id).average(:star).to_i)
+
+    hotel.save
     @rating
 
   end
