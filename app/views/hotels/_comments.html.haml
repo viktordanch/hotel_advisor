@@ -3,7 +3,7 @@
 
     %h4.text-shadow
       Comments
-    -@hotel.comments.each do |i|
+    -hotel.comments.each do |i|
       -unless i.id.nil?
         .row-fluid.text-shadow.comment-item
           .span3
@@ -15,9 +15,9 @@
 
       Leave a comment
 
-    =simple_form_for(@comment, url: hotel_comments_path({hotel_id: @hotel}), html: {novalidate: false}) do |comment|
+    =simple_form_for(comment, url: hotel_comments_path({hotel_id: hotel}), html: {novalidate: false}) do |comment|
 
       .form-input.text-shadow
         =comment.input :text , required: :true, :input_html => { :cols => 50, :rows => 3 }, label: 'comment text'
       .form-action
-        =comment.button :submit, 'Add comment', id: @hotel.id, class: 'comment_set app-button'
+        =comment.button :submit, 'Add comment', id: hotel.id, class: 'comment_set app-button'

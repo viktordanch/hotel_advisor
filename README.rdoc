@@ -8,7 +8,9 @@ Hotel Advisor
 
 2. Enter bundle install in project directory
 
-3.  Enter rake db:create (check database.yml before) and rakedb:migrate
+3. Enter rake db:create (check database.yml before) and rakedb:migrate
+
+4. Enter rake db:seed (it will create 9 hotels)
 
 4. Enter rails s and go to localhost:3000
 

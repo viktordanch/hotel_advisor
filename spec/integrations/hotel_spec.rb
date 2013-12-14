@@ -14,21 +14,21 @@ describe 'hotel page' do
       expect(page).to have_content 'Password'
 
       expect(page).to  have_css('input[value="Sign in"]')
-      expect(page).to have_link('Sign up')
+      expect(page).to have_link('Sing up')
 
      end
 
      it 'describe sign up page ' do
       visit '/users/sign_in'
 
-      click_link("Sign up")
+      click_link("Sing up")
       expect(page).to have_content 'Sign up'
       expect(page).to have_content 'Email'
       expect(page).to have_content 'Password'
       expect(page).to have_content 'Password confirmation'
 
       expect(page).to  have_css('input[value="Sign up"]')
-      expect(page).to have_link('Sign in')
+      expect(page).to have_link('Sing in')
 
      end
 
@@ -42,7 +42,7 @@ describe 'hotel page' do
 
       click_button("Sign up")
 
-      expect(page).to have_content 'Hotels'
+      expect(page).to have_content 'All hotels'
       expect(page).to have_content 'Best hotels'
     end
 
@@ -57,7 +57,7 @@ describe 'hotel page' do
 
       click_button("Sign in")
 
-      expect(page).to have_content 'Hotels'
+      expect(page).to have_content 'All hotels'
       expect(page).to have_content 'Best hotels'
     end
 
@@ -108,7 +108,7 @@ describe 'hotel page' do
       expect(page).to have_link 'show'
       expect(page).to have_link 'Add hotel'
       expect(page).to have_content 'Hotel'
-      expect(page).to have_content 'Hotels'
+      expect(page).to have_content 'All hotels'
       expect(page).to have_content 'Best hotels'
     end
 

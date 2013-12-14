@@ -12,6 +12,9 @@
 
            var id = $(this).attr('id');
            live_comment(id);
+
+         $('#comment_container form #comment_text').val('');
+
            return false;
        });
 
@@ -30,7 +33,9 @@ function live_rating(hotel_id){
             alert("error");
         },
         success: function(data){
+            $('#rating_container form #rating_star').val('');
             $('#rating_container').html(data);
+
         }
     });
 }
@@ -44,7 +49,7 @@ function live_comment(hotel_id){
             alert("error");
         },
         success: function(data){
-            $('#comment_container').html(data);
-        }
+             $('#comment_container').html(data);
+         }
     });
 }

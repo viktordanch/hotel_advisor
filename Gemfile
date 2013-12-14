@@ -18,7 +18,7 @@ gem 'country_select'
 gem "rmagick"
 gem "carrierwave"
 gem 'selenium-webdriver'
-
+gem "rails_best_practices"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -30,6 +30,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
 end
 
 gem 'jquery-rails'

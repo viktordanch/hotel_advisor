@@ -29,7 +29,7 @@
           %strong
             Price for room:
         .span8
-          = @hotel.room_price
+          = number_to_currency(@hotel.room_price)
 
       .row-fluid.text-shadow
         .span4.text-right
@@ -67,11 +67,10 @@
   .row-fluid
     .span6
       #comment_container
-        =render partial: 'comments'
-
+        =render 'hotels/comments', :hotel => @hotel, comment: @comment
     .span6
       #rating_container
-        =render partial: 'ratings'
+        =render 'hotels/ratings', :hotel => @hotel, rating: @rating
 
   %br
 

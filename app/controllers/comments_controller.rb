@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     @comment.user = current_user
     @comment.save
 
-    render partial: 'hotels/comments'
+    render partial: 'hotels/comments', :locals => {:hotel => @hotel, comment: @comment}
 
   end
 end
