@@ -127,7 +127,7 @@ describe HotelsController do
   describe "save with invalid params" do
       it "not save hotel and address" do
 
-        @hotel_attributes = FactoryGirl.attributes_for(:hotel, title: '')
+
         @address_attributes = FactoryGirl.attributes_for(:address)
 
         expect {

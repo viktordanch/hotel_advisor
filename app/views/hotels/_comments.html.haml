@@ -19,6 +19,6 @@
     =simple_form_for(@comment, url: hotel_comments_path({hotel_id: @hotel}), html: {novalidate: false}) do |comment|
 
       .form-input
-        =comment.input :text , required: :true, :input_html => { :cols => 50, :rows => 3 }
+        =comment.input :text , required: :true, :input_html => { :cols => 50, :rows => 3 }, label: 'comment text'
       .form-action
-        =comment.button :submit, 'Add', id: @hotel.id, class: 'comment_set'
+        =comment.button :submit, 'Add comment', id: @hotel.id, class: 'comment_set'

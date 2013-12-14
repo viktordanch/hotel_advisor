@@ -1,4 +1,4 @@
-%h1 Hotels#new
+%h1 New hotel
 %br
 %br
 %br
@@ -6,20 +6,20 @@
 =simple_form_for @hotel, html: {multipart: true} do |hotel|
   .form-input
     =hotel.input :title, required: :true
-    =hotel.input :rating, :input_html => { 'required'=>'required' }
-    =hotel.input :description, :input_html => { :cols => 50, :rows => 3 }
-    =hotel.input :room_price, as: :string
-    =hotel.input :breakfast
+    =hotel.input :rating, :input_html => { 'required'=>'required' }, label: 'Start rating'
+    =hotel.input :description, label: 'Room description', :input_html => { :cols => 50, :rows => 3 }
+    =hotel.input :room_price, as: :string, label: 'Price for room'
+    =hotel.input :breakfast, label: 'Include breakfast'
 
-    =hotel.input :image, as: :file
-    =hotel.input :remote_image_url
+    =hotel.input :image, as: :file, label: 'Photo'
+    =hotel.input :remote_image_url, label: 'Link on photo'
     = simple_fields_for :address do |address|
       = address.input :country
       = address.input :state
       = address.input :city
       = address.input :street
   .form-action
-    = hotel.button :submit, 'Add'
+    = hotel.button :submit, 'Create'
 
 %br
 

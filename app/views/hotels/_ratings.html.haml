@@ -7,8 +7,8 @@
   .span6
     %h4
       Leave your rating
-    =simple_form_for(@rating, url: hotel_ratings_path({hotel_id: @hotel})) do |rating|
+    =simple_form_for(@rating, url: hotel_ratings_path({hotel_id: @hotel}), :html => { :class => 'form-horizontal' }) do |rating|
       .form-input
         =rating.input :star, input_html: {"required"=>"required"}
       .form-action
-        = rating.button :submit, 'Add', id: @hotel.id , class: 'rating_set'
+        = rating.button :submit, 'Rate', id: @hotel.id , class: 'rating_set'

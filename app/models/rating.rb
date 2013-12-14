@@ -20,11 +20,9 @@ class Rating < ActiveRecord::Base
       end
     hotel.update_attributes(rating: Rating.where(hotel_id: hotel.id).average(:star))
 
-
     @rating
+
   end
-
-
 
   def self.new_rating(hotel, user, rating)
     @rating = hotel.ratings.new(star: rating)
